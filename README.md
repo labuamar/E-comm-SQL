@@ -56,49 +56,49 @@ To check that both these containers have successfully been created, check for th
 
 1- Connect to the PgAdmin server page using the port selected when creating the container.
 
-![1](/1.png)
+![1](.images/1.png)
 
 2- Input email and password to login into PgAdmin. These should be the same email and password previously specified.
 
-![1](/2.png)
+![1](.images/2.png)
 
 3- To connect the postgres container, locate the created server group. Right click > Register > Server.
 
-![1](/5.png)
+![1](.images/5.png)
 
 4- Input a server name.
 
-![1](/6.png)
+![1](.images/6.png)
 
 5- Select the 'Connection' tab and fill in the Host name, Port, Username, and Password fields. These should be from the created Postgres container. Hit 'Save'.
 
-![1](/7.png)
+![1](.images/7.png)
 
 ## Adding a dataset to the newly connected database
 
 1- Under the newly connected database > Schemas > Tables 
 
-![1](/16.png)
+![1](.images/16.png)
 
 2- Right click on Tables > Create > Table.
 
-![1](/8.png)
+![1](.images/8.png)
 
 3- Input a name for the Table
 
-![1](/9.png)
+![1](.images/9.png)
 
 4- Input column names and datatypes in the same order as the dataset columns> Save.
 
-![1](/10.png)
+![1](.images/10.png)
 
 5- Right click on the newly created table name> Import/Export Data.
 
-![1](/11.png)
+![1](.images/11.png)
 
 6- Select filename and format> OK.
 
-![1](/12.png)
+![1](.images/12.png)
 
 The dataset should now exist on the server and can be accessed using Psycopg2.
 
@@ -123,7 +123,7 @@ psycopg2-binary == 2.9.3
 
 ### Connecting to database using Psycopg2 on VSCode
 
-![1](/14.png)
+![1](.images/14.png)
 # Project Summary and Conclusion
 
 From my queries, it appears that there exists a link between product weight and whether a delivery is made late or on-time. This leads to many questions that can not be answered using this dataset:
@@ -134,4 +134,4 @@ These questions are worth investigating.
 
 This graph shows that lighter items arrive late more than three times as much as they arrive on time. Heavier items don't seem to have this issue:
 
-![2](graph_visualiser-1662571557102.png)
+![2](.images/graph_visualiser-1662571557102.png)
